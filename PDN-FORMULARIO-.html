@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO</title>
+    <script>
+        function mostrarMensaje() {
+            alert("Formulario enviado.");
+        }
+    </script>
+    <style>
+        body {
+            background-color: #c8a2c8;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: #FFC0CB;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p em {
+            font-style: italic;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form onsubmit="mostrarMensaje(); return false;">
+        <img src="buscar-empleo.jpg" alt="Buscar Trabajo" style="max-width: 100%;">
+        <h1>Portal de Empleo</h1>
+        <p><em>"Este formulario es el primer paso para explorar oportunidades laborales que podrían cambiar tu vida. ¡Adelante, con confianza y determinación!"</em></p>
+
+        <label for="nombre">Nombres: </label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos">
+
+        <label for="cedula">Cedula o pasaporte: </label>
+        <input type="text" name="cedula" id="cedula" placeholder="Ex: 0123456789">
+
+        <label for="direccion">Direccion Domiciliaria: </label>
+        <input type="text" name="direccion" id="direccion">
+
+        <label for="fecha">Fecha de Nacimiento: </label>
+        <input type="date" name="fechaNacimiento" id="fecha">
+
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email"placeholder="Ex: @example.com">
+
+        <label for="celular">Celular: </label>
+        <input type="tel" name="celular" id="celular" placeholder="Ex: (099) 123-4567">
+
+        <label for="genero">Género: </label>
+        <input type="radio" id="Masculino" name="genero" value="Masculino">
+        <label for="Masculino">Masculino</label>
+
+        <input type="radio" id="Femenino" name="genero" value="Femenino">
+        <label for="Femenino">Femenino</label><br>
+
+        
+        <label for="nivelEducativo">Nivel Educativo:</label>
+        <select id="nivelEducativo" name="nivelEducativo" required>
+            <option value="" disabled selected></option>
+            <option value="secundaria">Secundaria</option>
+            <option value="preparatoria">Preparatoria</option>
+            <option value="universidad">Universidad</option>
+            <option value="postgrado">Postgrado</option>
+        </select>
+
+        <label for="tipoTrabajo">Tipo de Trabajo:</label>
+        <select id="tipoTrabajo" name="tipoTrabajo" required>
+            <option value="" disabled selected></option>
+            <option value="tiempo-completo">Tiempo Completo</option>
+            <option value="tiempo-parcial">Tiempo Parcial</option>
+            <option value="Turnos Rotativos">Turnos Rotativos</option>
+        </select>
+
+        <label for="areaTrabajo">Área de Trabajo:</label>
+        <select id="areaTrabajo" name="areaTrabajo" required>
+            <option value="" disabled selected></option>
+            <option value="tecnologia">Tecnología de la Información</option>
+            <option value="salud">Salud y Cuidado de la Salud</option>
+            <option value="finanzas">Finanzas y Contabilidad</option>
+            <option value="educacion">Educación</option>
+            <option value="marketing">Marketing y Publicidad</option>
+            <option value="ventas">Ventas y Comercialización</option>
+            <option value="servicio-cliente">Servicio al Cliente</option>
+            <option value="ingenieria">Ingeniería</option>
+            <option value="arte-diseno">Arte y Diseño</option>
+            <option value="medio-ambiente">Medio Ambiente y Sostenibilidad</option>
+            <option value="rrhh">Recursos Humanos</option>
+        </select>
+
+        <label for="modalidad">Modalidad: </label>
+        <select id="modalidad" name="modalidad">
+            <option value="" disabled selected></option>
+            <option value="Presencial">Presencial</option>
+            <option value="Remota">Remota</option>
+            <option value="hibrida">Híbrida</option>
+        </select>
+
+        <button type="submit">Buscar Trabajo</button>
+    </form>
+
+</body>
+
+</html>
